@@ -1,0 +1,60 @@
+
+.third {
+    margin-bottom: 150px;
+}
+
+.third__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.third__items {
+    max-width: 350px;
+    height: 250px;
+    background-color: #f7f7f7;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.title-h2 {
+    margin-bottom: 66px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.third-h4 {
+    letter-spacing: 0.02em;
+}
+
+.third__items-list {
+    width: 172px;
+    height: 132px;
+    text-align: center;
+}
+
+.house__img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+@media (max-width:1280px) {
+    .third {
+        margin-bottom: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .third__section {
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .third__items {
+        width: 100%;
+    }
+}

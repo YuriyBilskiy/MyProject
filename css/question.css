@@ -1,0 +1,122 @@
+.question {
+    margin-bottom: 150px;
+}
+
+.question .section__h2 {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.question__h3 {
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 21px;
+}
+
+.question__h3.close {
+    margin-bottom: 33px;
+}
+
+.question__p {
+    margin-bottom: 40px;
+    color: var(--gray-color);
+    max-width: 730px;
+    line-height: 22px;
+    font-family: 'Open Sans';
+}
+
+.question__section {
+    max-height: 600px;
+    max-width: 730px;
+}
+
+.label__img {
+    display: flex;
+}
+
+.label__h3 {
+    color: var(--accent-color);
+    font-size: 24px;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.label__h3::before {
+    content: "";
+    margin-right: 13px;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background-image: url(../img/Polygon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ac__item {
+    margin-bottom: 50px;
+}
+
+.ac-container input {
+    display: none;
+}
+
+.ac-container article {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+.ac-container article p {
+    color: var(--gray-color);
+    font-family: 'Open Sans';
+}
+
+.ac-container input:checked~article.ac-small {
+    height: 83px;
+    max-width: 730px;
+}
+
+.ac-container input:checked~article.ac-medium {
+    height: 83px;
+    max-width: 730px;
+}
+
+.ac-container input:checked~article.ac-large {
+    height: 83px;
+    max-width: 730px;
+}
+
+@media (max-width: 1280px) {
+    .question {
+        padding: 30px 15px 30px 15px;
+    }
+
+    .question__h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:768px) {
+    .question {
+        margin-bottom: 0;
+    }
+
+    .question .section__h2 {
+        justify-content: center;
+    }
+
+    .label__h3 {
+        font-size: 20px;
+    }
+}

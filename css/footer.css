@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--dark-color);
+    min-height: 82px;
+    
+}
+
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__p {
+    padding-top: 30px;
+    color: var(--white-color);
+} 
+
+@media (max-width: 1280px) {
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .footer__items {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+    }
+    .footer__p {
+        padding-bottom: 20px;
+    }
+}   
